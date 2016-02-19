@@ -1,6 +1,13 @@
 Udacity Server Configuration Project
 ====================================
 
+This README provides details of my submission to the Linux Server Configuration project as part of the Udacity Full-Stack Developer Nanodegree.
+The task was to take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers. In this case, the VM was configured to run my [udacity-item-catalog](https://github.com/samfrances/udacity-item-catalog) project.
+ 
+The VM, which was provided temporarily by Udacity for the purposes of completing the project, is available at the time of writing but will not be available permanently.
+
+VM Details
+-----------------------
 - IP address: 52.36.233.228
 - URL: http://ec2-52-36-233-228.us-west-2.compute.amazonaws.com
 - SSH port: 2200
@@ -20,6 +27,7 @@ Software installed:
     - build-dep
     - python-psycopg2
     - postgresql
+    - unattended-upgrades
 - via pip:
     - bleach
     - oauth2client
@@ -38,7 +46,9 @@ Configuration changes
 - Created new user: `grader`
 - Granted sudo privileges to `grader`
 - Configured ssh so that only grader can ssh in
+    - Enforced key-based authentication only.
     - `AllowUsers grader`
+    - `PermitRootLogin no`
 - Changed SSH port to 2200
 - Set up ufw to only let through http, ssh and ntp requests
 - Set up postgresql, with user called catalog, and database called catalog
