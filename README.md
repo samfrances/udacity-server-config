@@ -2,7 +2,7 @@ Udacity Server Configuration Project
 ====================================
 
 This README provides details of my submission to the Linux Server Configuration project as part of the Udacity Full-Stack Developer Nanodegree.
-The task was to take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers. In this case, the VM was configured to run my [udacity-item-catalog](https://github.com/samfrances/udacity-item-catalog) project.
+The task was to "take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers". In this case, the VM was configured to run my [udacity-item-catalog](https://github.com/samfrances/udacity-item-catalog) project.
  
 The VM, which was provided temporarily by Udacity for the purposes of completing the project, is available at the time of writing but will not be available permanently.
 
